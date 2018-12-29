@@ -1,0 +1,23 @@
+-
+  var myFullName = 'Stirbu Marian Florin';
+  var myJobTitle = 'Master Unicorn';
+  var socialList = [
+    {icon: 'facebook', url: 'https://facebook.com/stirbuflorin'},
+    {icon: 'twitter', url: 'https://twitter.com/stirbuflorin'},
+    {icon: 'youtube', url: 'https://youtube.com/stirbuflorin'},
+    {icon: 'google-plus2', url: 'https://google.com/stirbuflorin'},
+    {icon: 'github', url: 'https://github.com/stirbex'},
+    {icon: 'skype', url: 'https://skype.com/stirbumarianflorin'},
+    {icon: 'linkdin', url: 'https://linkdin.com/stirbumarianflorin'},
+    {icon: 'earth', url: 'https://earth.com/stirbumarianflorin'},
+  ]
+#landing-page
+.landing-page
+  .landing-page__wrapper
+    h1.landing-page__name=myFullName
+    h2.landing-page__name=myJobTitle
+    ul.landing.page__social
+      each social in socialList
+        li.landing-page__item
+          label.landing-page__label(for="")
+            span(class=`my-cv__icon--${social.icon}`)
