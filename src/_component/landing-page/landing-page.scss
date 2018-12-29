@@ -44,7 +44,7 @@
 }
 
 #default-message-radio:checked +
-.landing-page__box-message+
+.landing-page__box-message +
 .landing-page__box-header {
     display: none;
 }
@@ -58,7 +58,7 @@
     position: relative;
 }
 
-.landing-page__box-header{
+.landing-page__box-header {
     position: absolute;
     left: 10%;
     right: 10%;
@@ -68,13 +68,12 @@
 }
 
 .landing-page__box-info,
-.landing-page__box-close {
+.landing-page__box-close{
     background: white;
     padding: 0.4rem;
     white-space: nowrap;
     line-height: 1.5rem;
     overflow: hidden;
-
     text-overflow: ellipsis;
 }
 
