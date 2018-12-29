@@ -1,5 +1,8 @@
-doctype html
-html
-  head
-  body
-    h1 hello
+extends _component/layout/page
+block cool-config
+  -
+    var myTitleForGoogleSearch = 'My really ultra awesome CV';
+    var myDescriptionForGoogleSearch = 'This is made using pure HTML5 and CSS3 techniques'
+
+block awesome-content
+  h1 this is it 
