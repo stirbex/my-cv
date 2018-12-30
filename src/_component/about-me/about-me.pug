@@ -1,7 +1,52 @@
 //-data come here
+-
+    var header = '#about me'
+    var imagePath = "asset/image/stirbu_florin_avatar.jpg"
+    var myFullName = "Stribu Marian Florin"
+    var myTitle = "Unicorn Master"
+    var slogan = 'The impossible can always be divided into possibilities.'
+    var achievement = {
+        title: 'achievement',
+        content: 'Here, should be my own content...but for the moment it is empty..sad.'
+    }
 
-
+    var coolStuff = {
+        title: 'grab cool stuff',
+        buttonList: [
+            {
+                url: 'https://github.com/stirbex',
+                icon: 'github',
+                label: 'Click to visit the GitHub project source'
+            },
+            {
+                url: 'asset/doc/doc.txt',
+                icon: 'file-world',
+                label: 'Click to download the "full experiance" Microsoft World version'
+            },
+            {
+                url: 'asset/doc/doc(2).txt',
+                icon: 'file-world',
+                label: 'Click to download the "full experiance" Microsoft World version'
+            }
+        ]
+    }
 //-the view comes here
 
-#about-me this is the id
-.about-me this is the class
+#about-me
+.about-me
+    .about-me__header=header
+    .about-me__avatar-wrapper
+        img.about-me__avatar(src="asset/image/stirbu_florin_avatar.jpg")
+    .about-me__full-name=myFullName
+    .about-me__full-title=myTitle
+    .about-me__slogan=slogan
+
+    .about-me__title=achievement.title
+    .about-me__content=achievement.content
+
+    .about-me__title-coolStuff.title
+    .about-me__link-list
+        each button in coolStuff.buttonList
+            a(href=button.url)
+                span=button.label
+                span(class=`.my-cv__icon--${button.icon}`)
