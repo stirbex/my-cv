@@ -1,52 +1,50 @@
-//-data come here
--
+//- data come here
+- 
     var header = '#about me'
     var imagePath = "asset/image/stirbu_florin_avatar.jpg"
-    var myFullName = "Stribu Marian Florin"
-    var myTitle = "Unicorn Master"
-    var slogan = 'The impossible can always be divided into possibilities.'
+    var myFullName = "Marian Zburlea"
+    var myTitle = "Unicorn trainer"
+    var slogan = `I make the front-end world a better place every day.I make the front-end world a better place every day.I make the front-end world a better place every day.I make the front-end world a better place every day.I make the front-end world a better place every day.I make the front-end world a better place every day.`
     var achievement = {
         title: 'achievement',
-        content: 'Here, should be my own content...but for the moment it is empty..sad.'
+        content: `I've built a custom SEO CMS that boosted search results position in Google's first places for tens of clients and their websites without any additional effort and minimum or no training.`
     }
 
     var coolStuff = {
         title: 'grab cool stuff',
         buttonList: [
             {
-                url: 'https://github.com/stirbex',
+                url: 'http://github.com/stirbex',
                 icon: 'github',
                 label: 'Click to visit the GitHub project source'
-            },
-            {
-                url: 'asset/doc/doc.txt',
-                icon: 'file-world',
-                label: 'Click to download the "full experiance" Microsoft World version'
-            },
-            {
-                url: 'asset/doc/doc(2).txt',
-                icon: 'file-world',
-                label: 'Click to download the "full experiance" Microsoft World version'
+            },{
+                url: "asset/doc/doc.txt",
+                icon: "file-word",
+                label: `Click to download the "one page" Microsoft Word version`
+            }
+            ,{
+                url: "asset/doc/doc(2).txt",
+                icon: "file-word",
+                label: `Click to download the "full experience" Microsoft Word version`
             }
         ]
     }
-//-the view comes here
-
+//- the view comes here
 #about-me
 .about-me
     .about-me__header=header
     .about-me__avatar-wrapper
-        img.about-me__avatar(src="asset/image/stirbu_florin_avatar.jpg")
+        img.about-me__avatar(src=imagePath)
     .about-me__full-name=myFullName
-    .about-me__full-title=myTitle
+    .about-me__title=myTitle
     .about-me__slogan=slogan
 
     .about-me__title=achievement.title
     .about-me__content=achievement.content
 
-    .about-me__title-coolStuff.title
+    .about-me__title=coolStuff.title
     .about-me__link-list
         each button in coolStuff.buttonList
-            a(href=button.url)
-                span=button.label
-                span(class=`.my-cv__icon--${button.icon}`)
+            a.about-me__link(href=button.url)
+                span.about-me__link-description=button.label
+                span(class=`my-cv__icon--${button.icon}`)
