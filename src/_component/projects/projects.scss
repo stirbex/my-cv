@@ -1,0 +1,46 @@
+.project {
+    background-color: $color-fantasy;
+}
+
+.project__header {
+    color: $color-periwinkle-gray;
+    @extend %header;
+}
+
+.project__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem;
+    
+}
+.project__date {
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: right;
+
+}
+
+.project__description {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.project__card {
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    border: 0.1rem solid $color-fiord; 
+    border-radius: 2rem;
+    text-align: center;
+}
+
+#project__iframe {
+    width:1000px;
+    border: 0.1rem solid black;
+    height:300px; 
+    padding:10px;
+    border-radius: 2rem;
+    width:560px;
+    margin:0 auto;
+    overflow:hidden;
+}

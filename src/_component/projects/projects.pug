@@ -1,0 +1,32 @@
+-
+    var header = '#recent projects'
+    var projectList = [
+        {
+            title: 'W3schools-replica',
+            date: '20-12-2018',
+            url: 'https://stirbex.github.io/w3schools-replica/',
+            description: 'This is a replica of the famous site w3schools.com',
+        },
+                {
+            title: 'Leguma-Vesela',
+            date: '20-12-2018',
+            url: 'https://stirbex.github.io/leguma-vesela/',
+            description: "This is a replica of the famous site w3schools.com I've built a custom SEO CMS that boosted search results position in Google's first places for tens of clients and their websites without any additional effort and minimum or no training.",
+        },
+                {
+            title: 'My-CV',
+            date: '20-12-2018',
+            url: 'https://stirbex.github.io/my-cv/',
+            description: 'This is a replica of the famous site w3schools.com',
+        }
+    ]
+
+
+#project
+.project
+    .project__header=header
+    each project in projectList
+        .project__card
+                .project__title=project.title
+                iframe(src=project.url id="project__iframe")
+                .project__description=project.description
