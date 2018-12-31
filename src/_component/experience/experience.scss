@@ -1,0 +1,78 @@
+.experience__details,
+.experience__input {
+    display: none;
+}
+
+.experience__input:checked + .experience__title 
++ .experience__details {
+    display: inherit;
+}
+
+.experience__header {
+    color: $color-periwinkle-gray;
+    @extend %header;
+}
+.experience__header {
+    color: $color-periwinkle-gray;
+    @extend %header;
+}
+
+.experience__title {
+    background-color: $color-gumbo;
+    color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.experience__details {
+    border: 0.2rem solid $color-gumbo;
+}
+
+.experience__top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience__date {
+    font-style: italic;
+}
+
+.experience__company {
+    font-weight: bold;
+}
+
+.experience__date,
+.experience__company {
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.experience__responsability {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+
+    &:nth-child(odd) {
+        background-color: $color-fantasy;
+    }
+
+    &:nth-child(odd) {
+        background-color: $color-twilight;
+    }
+}
+
+.my-cv__icon--plus {
+    // float: right;
+    pointer-events: none;
+}
+
+.experience__input:checked + .experience__title {
+    .my-cv__icon--plus  {
+        transform: rotateZ(45deg);
+        pointer-events: all;
+        cursor: pointer;
+    }
+}
