@@ -1,0 +1,45 @@
+.menu__header {
+    color: $color-periwinkle-gray;
+    @extend %header;
+}
+
+.menu {
+    padding: 2rem;
+    background-color: $color-iron;
+    margin-top: -0.99rem;
+    position: relative;
+}
+
+.menu__list {
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+}
+
+
+.menu__link {
+    display: block;
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: $color-mirage;
+    text-decoration: none;
+    border-bottom: 0.1rem solid black;
+    border-radius: 0.5rem;
+
+}
+
+
+.menu__label {
+    padding: 0 1rem;
+}
+
+.menu__go-to {
+    background-color: $color-fiord;
+    color: $color-white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+  }
